@@ -1,0 +1,68 @@
+Problem Statement : 
+You are an artist, and your palette is in the shape of an n x n grid. 
+The groove in the ith row and jth column has a shade of a colour with 
+darkness represented by a non-negative integer ai, j.
+
+You want to make this palette as dark as possible but not make any colour
+darker than the darkest colour already present in its corresponding row and column.
+In one step, you can increase the darkness of any one colour by 1.
+
+Find the number of steps it will take to make all colours in the palette as dark as possible.
+
+Note: the changes are performed independently; none of them changes the palette for the next step.
+
+Input Format
+The first line of the input consists of a single integer n – the length and breadth of the palette.
+
+The next n lines contain n space-separated integers each. The jth number in the ith line is ai,
+ j – the darkness of colour in the ith row and jth column of the palette.
+
+Output Format
+Print a single integer – the number of steps it would take to make the palette as dark as possible.
+
+Constraints
+1 <= n <= 1000
+
+0 <= ai, j<= 100
+
+Sample Testcase 0
+Testcase Input
+3
+0 0 0
+0 0 0
+0 0 0
+
+Testcase Output
+0
+Explanation
+No colour in the matrix can be made any darker.
+ So, the answer would be 0.
+
+Sample Testcase 1
+Testcase Input
+4
+3 0 8 4
+2 4 5 7
+9 2 6 3
+0 3 1 0
+
+Testcase Output
+35
+Explanation
+The final palette would be –
+
+
+8 4 8 7
+
+
+7 4 7 7
+
+
+9 4 8 7
+
+
+3 3 3 3
+
+
+We can find the difference between each corresponding element both 
+the grids (original and new) which gives the answer as 35. 
